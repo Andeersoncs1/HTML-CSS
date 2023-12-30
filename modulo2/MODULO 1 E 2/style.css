@@ -1,0 +1,240 @@
+@charset "UTF-8"
+/* EXTREMAMENTE IMPORTANTE EM TODOS OS STYLE CRIADOS SEPARADAMENTE, POIS NÃO TERÁ PROBLEMA COM ACENTUAÇÕES */
+
+
+
+/* EM HTML é id = CSS é # 
+    EM HTML é Class = em CSS é .
+    */
+
+body{
+    background-image: linear-gradient(to right, #FCC181, #FEC51E);
+    font-family: Arial, Helvetica, sans-serif;/* EXTREMAMENTE IMPORTANTE, POIS SE NÃO ACHAR ARIAL, IRÁ ACHAR A HELVETICA...
+    https://www.w3schools.com/cssref/css_websafe_fonts.php */
+   /* height: 100%;*/
+
+    /* MEDIDA ABSOLUTAS
+    cm, mm, in , pc, pt, pc
+
+    MEDIDAS RELATIVAS
+    em, ex, rem, vw, vh, %
+    */
+
+    font-size: 1em; /* sempre usar a em(principamente) e px em(RECOMENDAÇÃO DA W2C) */
+    /* tamnho normal da fonte são 16px - geralmente 16px são 1em */
+    font-weight: normal;
+    /*  weight (peso) - lighter (magrinho) normal, bold (largo) e bolder (mais largo), width (largura), aheight(altura) */
+    font-style: normal; /* variações itálico */
+    text-decoration: underline;
+    /* fica todo sublinhado */
+
+    /* posso colocar uma fonte online pelo fonts.google.com e inserir no import.css (só excluir a tag style) */
+    font: italic normal 1em Arial;
+    
+    
+    /* tem como encurtar esse código completo fonte-style -> font-weight -> fonte-size -> font-family */
+}
+main {
+    background-color: rgb(226, 100, 100);
+    border-radius: 10px; /* bordar ficam arredondadas */
+    box-shadow: 5px 5px 15px rgb(139, 126, 126);/* sobreamento do que você selecionou */
+    width: 600px; /* largura */
+    padding: 10px;/* acochoamento */
+    margin: auto; /* margem do texto ou imagem sempre centralizada */
+}
+
+h1#principal /* IDENTIFICAÇÃO PARA FAZER ALTERAÇÃO APENAS NA PARTE EXCLUSIVA QUE EU DESEJO NO STYLE, POIS APENAS ESSA QUE ESTAR IDENTIFICADO, ELE IRÁ SER MODIFICADO DO JEITO QUE DESEJO */ {
+    text-align: center;
+    color: blue;
+    text-align: center;
+}
+h1{
+ color: #F97B15;
+ text-align: center;/* texto centralizado na página */
+ text-shadow: 1px 1px 2px  #be5e0f;/* sombra no texto */
+ 
+}
+
+h2{
+ color: #FB9A88;
+}
+
+p {
+    text-align: justify; /* justify fica bem alinhado em ambos os lados do texto */
+}
+
+h2.secundario /* IDENTIFICAÇÃO PARA FAZER ALTERAÇÃO APENAS NA PARTE EXCLUSIVA QUE EU DESEJO NO STYLE, POIS APENAS ESSA QUE ESTAR IDENTIFICADO, ELE IRÁ SER MODIFICADO DO JEITO QUE DESEJO - USA SEMPRE O . */
+{
+    text-align: center;
+    color: rgb(64, 165, 81);
+
+}
+.destaque {
+    background-color: rgb(136, 136, 52);
+
+}/* POSSO COLOCAR APENAS O TRECHO QUE QUERO TAMBÉM ENTRAR NA CLASS, É SÓ ENVELOPAR CTRL + SHIFT + P E CRIAR A TAG "SPAN", automaticamente já entra na class quue desejo */
+
+div{
+    display: inline-block; /* tudo na mesma linha */
+    background-color: aqua; /* coloração fundo */
+    text-align: center; /* texto centralizado */
+    border: 1px solid black; /* bordas solidas na cor preta / quadrado*/
+    height: 100px; /* largura */
+    width: 100px;/* altura */
+}   
+div:hover {
+    background-color: #F97B15;/* seletor do div fica na cor que eu desejo quando passo o mouse */
+}
+div > p /* como tivesse um filho (algo dentro do div */
+{ 
+    display: none;
+}
+div:hover > p /* mostrar o que quero dentro do div */
+{ 
+    display: block;
+    color: white;
+    background-color: red;
+    text-align: center; /* TEXTO CENTRALIZADO */
+   
+}
+main#personalizado/* criei um link exclusivo para o main, para fazer separação da outra main, colocando o id personalizado */
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+a /* todos os links ficarem com a cor vermelha */
+{
+    color: red;
+    text-decoration: none; /* tirar o sublinhado dos links */
+    font-weight: bold; /* negrito */
+}
+
+a:hover /* pseudo classes são : (1X) */ {
+    color: chartreuse;
+    text-decoration: underline;/* para quando passar o mouse em cima ficar sublinhado */
+    
+}
+a:active/* quando for clicado / ativo */
+ {
+    color: yellow;
+}
+
+a:visited /* todos os site que já foram visitados, do qual eu coloquei */{
+    color: darkgreen;
+
+}
+
+a::after /* depois de todos os links -pseudo-elementos são 2X :: */{
+    content: '(link)';
+    text-decoration: none;
+    font-weight: normal;
+    color: brown;
+
+}
+
+a::before /* antes de todos os links */
+{
+    content: 'sites disponiveis ';
+    text-decoration: clique nesse link para mais informações;
+    font-weight: normal;
+    color: rgb(25, 34, 31);
+    
+}
+
+h1#caixa /* caixa circulada */
+{
+
+    background-color: lightgray;
+    height: 110px;
+    width: 300px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    text-align: center;
+
+    border: 10px solid darkgoldenrod /* encurtar (mãozinha) */
+
+    /* a margem serve para todo tipo de margem */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin: auto; /* ficou centralizado se for caixa, se não for será o text-align:center*/
+
+    margin: /* shortpad (mãoznha) só seguir a sequencia */
+    
+    
+    outline-style: dashed; /* tipo de tracejado */
+    outline-width: 5px; /* tamanho do tracejado */
+    outline-color: #FCC181; /* cor do tracejado */
+
+
+    outline: dashed 5px #FCC181 /* shartpad (mãozinha) sempre seguindo a ordem */
+
+    /* sempre gira sentido relógio - horário - para o espaçamento das bordas*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    padding: 10px  /* shortpad (mãozionha) sempre seguindo a ordem - se forem todas iguais, não precisa ficar repetindo*/
+    
+}
+a#borda /* borda circulada no link */
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+
+    border: 3px solid red;
+}
+
+h1#site{
+    color: rgb(27, 110, 179);
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    background-color: aqua;
+    padding: 3px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.418) /* sempre deixar essa sobre em 1px 1px 'px black (o mais recomendado) , mas pode deixar sempre nesse padrão com a transparência na metade, para dar um efeito mais legal*/
+}
+
+nav > a {
+    text-decoration: none;
+    color: #FEC51E;
+    font-weight: bold;
+    margin-right: 30px;
+    ;
+}
+nav >a:hover {
+
+    text-decoration: underline; /* texto sublinhado */
+
+}
+
+footer {
+    background-color: black;  /* cor de fundo do texto */
+    color: white; /* cor do texto */
+    text-align: center; /* posicionamento do texto */
+    padding: 4px; /* espaçamento das bordas */
+    margin: 0px; /* margem  */
+}
+p#desenvolvido {
+    text-align: center;
+}
+
+footer > p {
+    margin: 1px;
+    color: rgb(74, 74, 209);
+}
+div#bola{
+    background-color: rgb(30, 121, 201);
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.418)
+}

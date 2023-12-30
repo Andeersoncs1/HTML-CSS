@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* FONTE IMPORTADA DIRETAMENTE DO SITE DO GOOGLE (fonts.google.com) */
+
+        @font-face {
+            font-family: 'love';/* só pra diferenciar */
+            src: url('fonts/love Larry.otf')/* diretório */ format('opentype') url('fonts/love larry.ttf'),/* diretorio */ format('truetype'); /* aqui você colocar a fonte baixada na pasta que você está criando e colocar exatamente o nome que está o arquivo aqui, com o link */
+
+            /* tipo de fontes
+           - opentype (otf)
+            - truetype (ttf)
+            - embbeded-opentype
+            -truetype-att (apple advanced typography)
+            svg
+
+            */
+           
+        }
+
+        /* EXTEÇÃO PARA COPIAR FONTE E CORES DE OUTROS SITES - FONTESNINJA */
+        body{
+
+            font: italic normal 1em Arial, verdana, serif; /* mãozinha de sempre kkk, você não precisa cirar uma linha para cada como font-weight, style, size, e family, seria apenas seguir a sequencia  */ 
+        
+            
+        }
+
+        h1{
+            text-align: left;/* textp a esquerda */
+            text-align: right;/* texto a direita */
+        }
+
+        h2{
+            text-align: center; /* centralizado */
+        
+        }
+
+    h3{
+        text-align: justify; /* fica alinhado a direita e esquerda */
+        text-indent: 20px;/* para redação, quando o texto começa um pouco mais para trás do alinhamento */
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="principal">  <!-- IDENTIFICAÇÃO PARA FAZER ALTERAÇÃO APENAS NA PARTE EXCLUSIVA QUE EU DESEJO NO STYLE, POIS APENAS ESSA QUE ESTAR IDENTIFICADO, ELE IRÁ SER MODIFICADO DO JEITO QUE DESEJO -->
+            SITE DE EXEMPLO
+        </h1>
+        <h2 class="secundario">TITULO 1</h2> <!-- QUANTO DESEJO COLOCAR MAIS DE UMA MARCAÇÃO DE TITULO, SEMPRE USAR CLASS, SE FOR APENAS 1, COLOCA O ID PARA IDENTIFICAÇÃO -->
+        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eius, distinctio sint nobis corrupti voluptatum qui illum inventore dolor error, ipsum quibusdam eum eaque, atque impedit expedita <span class="destaque">perferendis non accusamus</span></P>
+    <!-- POSSO COLOCAR APENAS O TRECHO QUE QUERO TAMBÉM ENTRAR NA CLASS, É SÓ ENVELOPAR CTRL + SHIFT + P E CRIAR A TAG "SPAN", automaticamente já entra na class quue desejo -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a impedit quaerat consectetur tempora magnam temporibus, maxime quasi veniam iste voluptas harum aliquam praesentium velit animi dolore fugiat hic corrupti!</p>
+        <h2 class="secundario">TITULO 2</h2> <!-- QUANTO DESEJO COLOCAR MAIS DE UMA MARCAÇÃO DE TITULO, SEMPRE USAR CLASS, SE FOR APENAS 1, COLOCA O ID PARA IDENTIFICAÇÃO -->
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit iusto voluptatibus totam magnam eaque corporis incidunt architecto, commodi sequi. Nisi at pariatur aut autem quae, omnis quaerat asperiores facilis!</P>
+        <P>Lorem ipsum dolor sit <span class="destaque">amet consectetur adipisicing</span> <!-- POSSO COLOCAR APENAS O TRECHO QUE QUERO TAMBÉM ENTRAR NA CLASS, É SÓ ENVELOPAR CTRL + SHIFT + P E CRIAR A TAG "SPAN", automaticamente já entra na class quue desejo --> elit. Accusamus magnam a voluptatum harum tempore quos, placeat necessitatibus blanditiis assumenda nisi, asperiores aliquid autem quod molestias officiis vel omnis id quia!</P>
+        <h2>TITULO 3</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam ipsam itaque omnis, ipsum dolorem at libero earum dolor illum maxime eligendi, hic iste, nisi non laudantium consequatur tempore. Maiores.</P>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde officia laudantium numquam assumenda architecto odit ipsa minus similique sequi vitae, minima dignissimos aperiam accusantium voluptates nihil voluptatem? Quasi, provident aperiam.</P>
+    
+    
+    <h1 id="secundario">
+        ANATOMIA DOS TIPOS
+    </h1>
+    <P>
+        FAMILIA TIPOGRÁFICA<!-- existe o light, normal, seminegrito, negrito e extra negrito. (nem toda fonte tem) você pode encontrar no google font - o mais interessante é deixar a fonte padrão, mas a monoespaçadas, pois fica mais bonito e simétrico -->
+    </P>
+</main>
+   <H1>
+    TRABALHANDO COM FONTE
+   </H1> 
+   <P>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, eum quis similique id temporibus, fugit commodi autem, sunt accusantium dolore quas tenetur aut magnam mollitia qui beatae veniam vitae modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, eum quis similique id temporibus, fugit commodi autem, sunt accusantium dolore quas tenetur aut magnam mollitia qui beatae veniam vitae modi.
+   </P>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit nulla provident, impedit exercitationem ipsum repudiandae vero distinctio in accusantium sed dicta! Aperiam maiores, dolorum non ab animi ipsa reprehenderi</p>
+
+   <h1>Peseudo-Classes</h1>
+
+<div id="d1">01</div>
+<div id="d2">02</div>
+<div id="d3">03</div>
+
+<h1>EXEMPLO DE HOVER</h1>
+<P>passe o mouse sobre o texto abaixo</P>
+<div id="d4"> PASSE O MOUSE EM CIMA AQUI
+    <p>texto escondido</p>
+</div>
+<p> fim do exemplo</p>
+<p> 
+
+</p>
+<h1>PERSONALIZANDO LINKS</h1>
+<main id="personalizado"><ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank" > <!-- target _black é para abrir em nova aba -->Repositório Github</a></li>
+    <li><a href="https://youtube.com/cursoemvideo">Canal do Youtube</a></li>
+    <li><a href="hhtp://www.cursoemvideo.com">Site de CursoemVideo</a></li>
+</ul></main>
+
+<!-- height (altura) - largura (width) - traçar uma linha em volta do conteúdo (border) - espaço entre o conteúdo e linha (padding) - a bordar pra fora tem (margin) - contorno dentro do elemento (outline)-->
+
+<!-- box-level ela cria uma caixa completa na tela e fecha todos os paragrafos  (<DIV>) quebrar a linha e criar uma box a larguran inteira-->
+<!-- inline-level ela cria uma caixa e continua mediante ao tamanho que eu coloquei (<span>) só quando quiser um elemento do lado do que quero, não quero que ocupe a linha toda-->
+
+    <h1 id="caixa">
+       EXEMPLO DE CAIXA DE BOX-LEVEL
+    </h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="#" id="borda"> links são exemplos de caixas inline-level</a></p>
+    
+    
+    <h1>GROUPING TAGS</h1><!-- a malhor semântica para criar site -->
+    <header><!-- semantica do cabeçalho -->
+        <h1 id="site">MEU SITE</h1>
+        <nav>
+            <a href="link">https://youtube.com/cursoemvideo</a>
+            <a href="link">https://youtube.com/cursoemvideo</a>
+            <a href="link">https://youtube.com/cursoemvideo</a>
+            <a href="link">https://youtube.com/cursoemvideo</a>
+            <a href="link">https://youtube.com/cursoemvideo</a>
+        </nav>
+        
+    </header>
+    <main><!-- semnântica do principal -->
+        <section id="assuntos">
+            <article>
+                <h2>MELHORES DO ANO</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, vero nemo non, facilis ipsum voluptates ullam tempora deleniti culpa labore quasi qui, aliquid voluptatem eaque sit veritatis quo consequatur enim!</p>
+                <aside>Artigo escrito por José</aside>
+            </article>
+        </section>
+        <section id="noticias">
+
+        </section>
+
+    </main>
+    <footer><!-- semântica rodapé -->
+        <p id="desenvolvido">Desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

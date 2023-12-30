@@ -1,0 +1,42 @@
+@charset "UTF-8"
+/* sempre usar por conta da simbologia para pagina de estilo, devido aos acentuações dos nomes*/
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    
+}
+h1 { 
+    color: brown;
+    background-color: beige;
+}
+/* quado é feito desse jeito, diz que todos os H1 da página terão essa coloração, e todos o fundo do h1 (background color) a colocaração do fundo será a cor que eu desejar*/
+h2 {
+    color: rgb(158, 21, 28);
+}/* quado é feito desse jeito, diz que todos os H2 da página terão essa coloração  */
+
+p {
+    text-align: justify;
+}/* todos os textos ficaram organizados */
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    
+}
+h1 { 
+    color: brown;
+    background-color: beige;
+}
+/* quado é feito desse jeito, diz que todos os H1 da página terão essa coloração, e todos o fundo do h1 (background color) a colocaração do fundo será a cor que eu desejar*/
+h2 {
+    color: blueviolet;
+}/* quado é feito desse jeito, diz que todos os H2 da página terão essa coloração  */
+
+p {
+    text-align: justify;
+}/* todos os textos ficaram organizados */

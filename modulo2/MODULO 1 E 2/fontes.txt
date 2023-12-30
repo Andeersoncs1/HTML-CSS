@@ -1,0 +1,12 @@
+SITES PARA IDENTIFICAR FONTES:
+
+https://fonts.google.com/specimen/Work+Sans?query=wor (site google)
+https://www.whatfontis.com/ (você printa a imagem e verificar no site qual você é pela foto)
+https://www.myfonts.com/ (todos fazem a memsma coisa)
+https://www.fontsquirrel.com/ (tem como identificar as fontes no site também e tem fontes também)
+
+EXTENSÕES
+collorzilla
+fontsNinja
+web developers
+window resizer
