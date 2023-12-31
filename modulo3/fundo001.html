@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- SEMPRE COLOCAR "pt-br" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem</title>
+    <style>
+        div.quadrado /* define uma divisão ou seção (Todas as div que foram criadas no body foram classificadas em class (então todas as modificações em style irá ativar em todas as sessões)*/{
+            border: 1px solid black; /* borda */
+            display: inline-block;
+            border-radius: 10px;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+                
+        }
+        
+        body {
+            background-image: url(imagens-cap19/wallpaper001.jpg);
+        }
+    
+        div#q1 /* Id (q1) criado no Body para classificar apenas o que será feito nessa sessão. */{
+            background-color: aqua;
+
+        }
+
+        div#q2 /* Id (q2) criado no Body para classificar apenas o que será feito nessa sessão. */ {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 /* Id (q3) criado no Body para classificar apenas o que será feito nessa sessão. */ {
+            background-image: url(imagens-cap19/pattern003.png);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+
+
+</body>
+</html>
