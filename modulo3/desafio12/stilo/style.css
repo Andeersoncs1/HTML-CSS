@@ -6,10 +6,9 @@
 
 :root /* elemento especificação - variação */ {
     --fonte1: verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:'Roboto', sans-serif;
-    --fonte3: 'Passion One', sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3:'Roboto', sans-serif;
 
-    
 }
 
 * {
@@ -22,6 +21,7 @@ html, body {
     min-height: 100vh;
     background-color: darkgrey;
     font-family: var(--fonte1);
+    font-size: 1em;
     
 
 }
@@ -35,9 +35,10 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    text-transform: uppercase; /* letras maiusculas */
     font-variant: small-caps; /* as primeiras letras do paragrafos serão maiusculas */
    font-family: var(--fonte2);
+   font-size: 10vw;
+
 }
 
 header > p {
@@ -61,7 +62,7 @@ section /* espaços entre os paragrafos */ {
     line-height: 2em; /* espaçamento entre as linhas  */
     padding-left: 30px;/* espaçamento de paragrafo  */
     font-family: var(--fonte3);
-    font-size: 2em;
+    font-size: 3.5vw; /* vai aumentando depedendo do tamanho da tela (viewport) */
 }
 
 section.normal /* usa quando aplicado na class */ 
@@ -71,7 +72,32 @@ section.normal /* usa quando aplicado na class */
 
 }
 
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.555);
+    background-size: cover; 
+    background-attachment: fixed; /* efeito parallax (texto rolando e imagem estática) */
+}
 
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.493);
+    text-shadow: 1px 1px 0px;
+    
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    
+}
 
 footer {
      background-color: black;
