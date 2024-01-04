@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px; /* largura */
+            border-collapse: collapse;
+            position: relative;
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px; 
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1%;
+            background-color: gray;
+        }
+        
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) /* efeito zebrado nas linha da tabela (2n) - informa de quantas em quantas linhas quero o efeito - (odd) todas as celulas impares ficarem marcadas (even) - par */ {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomias para tabelas grandes 
+        THEAD
+            TD, TD, TH
+        TBODY
+            TD, TD, TH
+        TFOOT
+            TD, TD, TH
+    -->
+    <table>
+        <caption>População da unidades federativas</caption><!-- legenda da tabela -->
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th> <!-- Células de Título = th - Essa tag (th) serve para especificarmos o título de uma coluna ou até mesmo de uma linha. Essa tag também não precisa ser usada exclusivamente dentro da área da cabeça (thead)... Por exemplo, na área do rodapé (tfoot) podemos ter a necessidade de usar uma célula de título... Ex: cell = " Total de Habitantes: " - Nesse caso podemos usar o th sem problema nenhum, mesmo sendo no rodapé da tabela, visto que é um título. -->
+                <!-- Dessa forma, existe um parâmetro para a tag th, e esse parâmetro serve justamente para especificarmos se o título da nossa célula é para uma coluna ou para uma linha. Esse parâmetro é o " scope ", você deve inseri-lo dentro da tag de abertura do th. -->
+                <!-- Se o título da sua célula for para uma COLUNA, use como definição do parâmetro " scope " o VALOR " col ". -->
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td> <!-- Células de Dado = td (um dado pode ser em forma textual também, nem sempre é um número)  -->
+                <td class="num">44 411 238</td>  
+            </tr>
+            <tr>
+                <td >Minhas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- Se o título da sua célula for para uma LINHA, use como definição do parâmetro " scope " o VALOR " row ". -->
+                <td class="num"><strong>25 225 222</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vitae ullam, asperiores, a veniam autem maiores rerum dolore corporis eius incidunt quam, facere temporibus. Itaque, eveniet mollitia! Labore, odit aliquid?
+</p>
+</body>
+</html>
