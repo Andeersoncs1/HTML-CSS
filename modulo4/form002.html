@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro-php" method="post" autocomplete="on"> <!-- se tiver senha, sempre colocar post e não get -->
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" autocomplete="username"> <!-- tag required é um requerimento do proprio navegador, pois quando não digita nada, ele já informa que precisa digitar no campo- max e min length é a quantidade de caracteraes minimos-->
+        </p>
+        <p>
+            <label for="isen">senha:</label>
+            <input type="password" name="sen" id="isen" required maxlength="15" size="8" placeholder="min 8 caracteres" autocomplete="new-password"> <!-- tyoe "password" ele fica com asteriscos nas senhas / size é quantas letras vai mostrar no campo // placeholder é dica-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">  <!-- tyoe "password" ele fica com asteriscos nas senhas  -->
+        </p>
+    </form>
+</body>
+</html>
